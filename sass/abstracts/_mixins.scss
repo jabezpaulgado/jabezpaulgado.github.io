@@ -1,0 +1,31 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@mixin imageCover {
+    &__image {
+        width: $page-max-width;
+        object-fit: cover;
+    }
+}
+
+@mixin btnaddcartviewdetails($top, $left) {
+    width: 265px;
+    height: 40px;
+    border-radius: 3px;
+    
+    margin-bottom: 5px;
+    position: relative;
+
+    a {
+        color: #fff;
+        position: absolute;
+        top: $top;
+        left: $left;
+        text-decoration: none;
+    }
+}

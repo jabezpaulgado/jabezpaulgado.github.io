@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.section__header {
+  width: 100%;
+  height: 70vh;
+  background-image: url(../images/stem.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  .section__header--description {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    font-size: 26px;
+    transform: translate(-50%, -50%);
+    background: #0F0F0F;
+    color: #fff;
+    padding: 15px;
+    opacity: .9; }
+
+.section__content {
+  width: 80%;
+  margin: 30px auto; }
+  .section__content--row {
+    content: "";
+    display: table;
+    clear: both;
+    width: 100%; }
+    .section__content--row:not(:last-child) {
+      margin-bottom: 20px; }
+  .section__content--image {
+    float: left;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    .section__content--image img {
+      width: 300px;
+      max-height: 100%;
+      object-fit: cover; }
+  .section__content--description {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    float: left;
+    margin-left: 20px; }
+    .section__content--description li {
+      list-style-type: none;
+      font-size: 25px; }
+
+footer {
+  background-image: linear-gradient(to right bottom, #E3DFDF, #D7D0D0);
+  height: 180px;
+  margin-top: 132px;
+  padding: 20px; }
+  footer .footer__image {
+    float: left;
+    margin-left: 181px;
+    margin-right: 38px; }
+  footer .footer__author-text {
+    float: left;
+    width: 50%; }
+    footer .footer__author-text h3 {
+      font-size: 27px;
+      font-weight: bold; }
+  footer .footer__author-name {
+    float: right;
+    margin-top: 130px;
+    padding: 15px; }
+  footer .footer__text {
+    margin-top: 21px; }

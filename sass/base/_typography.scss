@@ -1,0 +1,53 @@
+.product-listing {
+    width: 74%;
+    float: left;
+    
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    
+    @include clearfix;
+
+    [class^="product"] {
+        float: left;
+        &:not(:last-child) {
+            margin-right: $product-grid-hz-gutter;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .product {
+        width: 265px;
+        .image {
+            background-size: cover;
+            width: 100%;
+            padding-bottom: 100%;
+        }
+
+        .product--info {
+            margin-top: -23px;
+
+            h3 {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 20px;
+            }
+
+            .product-description {
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        }
+
+        &--tags {
+            width: auto;
+            height: 100%;
+            background: #E8EFF2;
+            padding: 6px 9px 6px 10px;
+            box-sizing: border-box;
+            margin-top: 5px;
+        }
+    }
+
+}

@@ -1,0 +1,5 @@
+.main--header {
+    max-width: $page-max-width;
+
+    @include imageCover;
+}

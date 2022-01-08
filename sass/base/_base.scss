@@ -1,0 +1,162 @@
+@font-face {
+    font-family: RockwellFont;
+    src: url(../../fonts/Gotham-Light.woff);
+  }
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: RockwellFont;
+}
+
+
+body {
+    
+    box-sizing: border-box;
+    max-width: $page-max-width;
+}
+
+.second--nav {
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.shop-content {
+    box-sizing: border-box;
+    @include clearfix;
+}
+
+.breadcrumbs--cont {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    padding: 20px 0;
+    margin-top: -23px;
+    .breadcrumbs {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        ul {
+            li {
+                display: inline-block;
+    
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.search--cont {
+    margin-bottom: 2rem;
+    &__form {
+        margin-left: 15%;
+        
+        form {
+            label {
+                width: 300px;
+                height: 25px;
+                left: 271px;
+                top: 735px;
+
+                font-family: Sofia Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 25px;
+                /* identical to box height */
+
+                display: flex;
+                align-items: center;
+
+                color: #030301;
+
+            }
+        }
+    }
+    .search--box {
+    
+        width: 740px;
+        height: 50px;
+        background: #F5F5F5;
+        border-radius: 2px;
+        padding: 10px 16px;
+        padding-left: 30px;
+    }
+
+    .search--icon {
+        display: inline-block;
+        margin-left: -42px;
+        img {
+            vertical-align: middle;
+        }
+    }
+}
+
+.filter--container {
+    
+    background: #FAF7F5;
+    border-radius: 2px;
+    width: 24%;
+    float: left;
+    padding: 20px 5px 5px 5px;
+    margin-right: 1rem;
+    @include clearfix;
+
+    &__header {
+        position: relative;
+        margin-bottom: 30px;
+
+        .filter--title {
+            position: absolute;
+            left: 10%;
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        .filter--count {
+            position: absolute;
+            left: 60%;
+            font-family: Sofia Pro;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 24px;
+            color: #314359;
+        }
+    }
+
+    .filter--input {
+        margin-top: 1rem;
+        [type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            background: #FFFFFF;
+            /* gray */
+            border: 1px solid #C9CDD5;
+            box-sizing: border-box;
+            border-radius: 2px;
+            vertical-align: bottom;
+        }
+
+        label {
+            display: block;
+            padding-left: 15px;
+            text-indent: -15px;
+
+            &:not(:last-child) {
+                margin-bottom: .4rem;
+            }
+        }
+    }
+}

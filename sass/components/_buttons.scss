@@ -1,0 +1,21 @@
+.button--cont {
+    margin-top: 150px;
+}
+.btn--view__details {
+    background-color: #A2BBC9;
+    margin-top: 55px;
+    @include btnaddcartviewdetails(25%, 35%);
+}
+
+.btn--add__cart {
+    background-color: #000;
+    margin-top: 5px;
+    @include btnaddcartviewdetails(25%, 5%);
+    
+    span {
+        position: absolute;
+        top: 25%;
+        color: #fff;
+        left: 60%;
+    }
+}
