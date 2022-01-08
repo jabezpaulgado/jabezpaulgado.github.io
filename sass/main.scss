@@ -40,6 +40,12 @@
       color: #fff;
       padding: 15px;
       opacity: .9;
+
+        @media (max-width: 37.5em) {
+            width: 87%;
+            top: 70%;
+            font-size: 11px;
+        }
     }
     
 }
@@ -89,11 +95,24 @@ footer {
     height: 180px;
     margin-top: 132px;
     padding: 20px;
+    
+    @media (max-width: 37.5em) {
+        height: 100vh;
+    }
+
     .footer{
         &__image {
+
+            @media (max-width: 37.5em) {
+                margin-right: 0;
+                margin-left: 0;
+            }
+
             float: left;
             margin-left: 181px;
             margin-right: 38px;
+
+            
         }
 
         &__author {
@@ -103,6 +122,11 @@ footer {
                 h3 {
                     font-size: 27px;
                     font-weight: bold;
+                }
+
+                @media (max-width: 599px) {
+                    float: none;
+                    width: 100%;
                 }
             }
 

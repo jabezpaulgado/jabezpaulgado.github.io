@@ -20,6 +20,11 @@
     color: #fff;
     padding: 15px;
     opacity: .9; }
+    @media (max-width: 37.5em) {
+      .section__header--description {
+        width: 87%;
+        top: 70%;
+        font-size: 11px; } }
 
 .section__content {
   width: 80%;
@@ -52,16 +57,27 @@ footer {
   height: 180px;
   margin-top: 132px;
   padding: 20px; }
+  @media (max-width: 37.5em) {
+    footer {
+      height: 100vh; } }
   footer .footer__image {
     float: left;
     margin-left: 181px;
     margin-right: 38px; }
+    @media (max-width: 37.5em) {
+      footer .footer__image {
+        margin-right: 0;
+        margin-left: 0; } }
   footer .footer__author-text {
     float: left;
     width: 50%; }
     footer .footer__author-text h3 {
       font-size: 27px;
       font-weight: bold; }
+    @media (max-width: 599px) {
+      footer .footer__author-text {
+        float: none;
+        width: 100%; } }
   footer .footer__author-name {
     float: right;
     margin-top: 130px;
